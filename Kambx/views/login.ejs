@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video class="background-video" autoplay muted loop>
+        <source src="/videos/video1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="subContainer">
+        <form class="loginForm" action="/login" method="post">
+          <div>
+            <h5 style="color: white; font-size: 25px; margin-bottom: 5px">
+              Login
+            </h5>
+          </div>
+          <input
+            class="formInput"
+            name="username"
+            placeholder="Enter Name"
+            type="text"
+          />
+          <input
+            class="formInput"
+            name="password"
+            placeholder="Enter Name"
+            type="password"
+          />
+          <button class="formButton" type="submit">Login</button>
+          <div
+            style="
+              width: 80%;
+              margin-top: 10px;
+              padding-inline: 10px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <a class="formLink">Register</a>
+            <a class="formLink">Reset Password</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
